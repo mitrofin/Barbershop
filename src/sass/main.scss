@@ -1,0 +1,17 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap');
+@import './variables';
+@import './body';
+@import './page-header';
+@import './services';
+@import './about-us';
+@import './contacts-section';
+@import './our-masters-section';
+@import './why-us';
+@import './portfolio';
+@import './page-footer';

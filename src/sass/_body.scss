@@ -1,0 +1,108 @@
+.body {
+  font-family: $basic-font;
+  background-color: $white-color;
+}
+
+.section {
+  @media screen and (max-width: 767px) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.container {
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/*Утилитарный класс для текста-манифеста секции (с палкой)*/
+
+.section-manifest {
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $title-color;
+
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 1px;
+    width: 60px;
+
+    margin-right: 20px;
+
+    background-color: $title-color;
+  }
+}
+
+/*Класс для Заголовка секции*/
+.section-title-main {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+
+  color: $title-color;
+
+  margin-bottom: 20px;
+}

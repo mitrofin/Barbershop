@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../src/sass/main.css" />
+    <title>Barbershop</title>
+  </head>
+  <body>
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <header>
+      <include src="./partials/page-header.html"></include>
+    </header>
+
+      <main>
+        <include src="./partials/about-us.html"></include>
+
+        <include src="./partials/services.html"></include>
+
+        <include src="./partials/why-us.html"></include>
+
+        <include src="./partials/our-masters.html"></include> 
+
+        <include src="./partials/portfolio.html"></include>
+
+        <include src="./partials/contacts.html"></include>
+      </main>
+
+    <footer>
+      <include src="./partials/footer.html"></include>
+    </footer>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

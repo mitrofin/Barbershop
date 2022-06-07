@@ -1,0 +1,69 @@
+.portfolio-manifest {
+    display: flex;
+    align-items: center;
+
+    margin: 0px 0px 44px 0px;
+    font-family: $basic-font;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $title-color;
+
+    &::before {
+        content: '';
+        height: 1px;
+        width: 60px;
+        margin-right: 20px;
+        background-color: $title-color;
+    }
+}
+
+.portfolio-masters-block {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 767px) {
+        max-width: 418px;
+    }
+    @media screen and(min-width: $tablet) and (max-width: 1199px) {
+        max-width: 690px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: 1170px;
+    }
+}
+
+.portfolio-list {
+    display: block;
+    list-style: none;
+    
+    @media screen and(min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.portfolio-list > li:nth-child(-n + 3) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
+.portfolio-list > li:nth-child(2n) {
+    @media screen and (min-width: $tablet) {
+        margin-left: 30px;
+    }
+}
+
+.portfolio-list > li:nth-child(-n + 2) {
+    @media screen and(min-width: $tablet) and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+}
+.portfolio-list > li:nth-child(3) {
+    @media screen and(min-width: $desktop) {
+        margin-left: 30px;
+    }
+}
